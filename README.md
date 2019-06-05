@@ -20,6 +20,23 @@ package.json 找到下面一行代码
 "serve": "vue-cli-service serve --open"
 ```
 
+## 点击 a 标签拨打电话
+```
+<a href="'tel:' + phone">{{phone}}</a>
+```
+
+## 判断手机类型 IOS & Android
+```
+const u = navigator.userAgent;
+
+// 判断 Android
+if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) 
+
+// 判断 IOS
+if (u.indexOf('iPhone') > -1)
+```
+
+
 ## Project setup
 ```
 npm install
