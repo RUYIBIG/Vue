@@ -1,5 +1,17 @@
 # Vue
 
+## npm run serve 默认打开浏览器
+```
+package.json 找到下面一行代码
+
+"serve": "vue-cli-service serve"
+
+修改为
+
+"serve": "vue-cli-service serve --open"
+
+```
+
 ## Project setup
 ```
 npm install
