@@ -16,6 +16,7 @@ const router = new Router({
   })(require.context('./views/', true, /router\.js$/)),
 });
 
+// 全局钩子函数
 router.beforeEach((to, from, next) => {
   /* 路由发生变化修改页面title */
   if (to.meta.title) {
